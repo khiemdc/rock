@@ -168,7 +168,7 @@ body {
     .start-over {
       font-size: 18px;
       padding: 5px 10px;
-      position: fixed;
+      position: auto;
       left: 35%;    
       bottom:2%;
     }
