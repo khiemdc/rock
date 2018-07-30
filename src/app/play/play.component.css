@@ -168,9 +168,9 @@ body {
     .start-over {
       font-size: 12px;
       padding: 5px 10px;
-      position: fixed;
+      position: static;
       left: 35%;
-      bottom:1%;
+      margin-top:5%;
     }
     
   }
