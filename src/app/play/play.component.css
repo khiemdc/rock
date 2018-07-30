@@ -140,3 +140,37 @@ body {
     font-size: 18px;
     padding: 10px 15px;
   }
+
+  @media only screen and (max-width : 480px) {
+    h3 {
+      font-size: 10px;
+    }
+
+    .fa{
+      cursor:pointer;
+      font-size:3em;
+      color: white;
+    }
+    .selectedWeapon{
+      color: green;
+    }
+  
+    .comp-selected{
+      color: red;
+    }
+
+    .result {
+      margin-top: 10px;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+    }
+    .start-over {
+      font-size: 18px;
+      padding: 5px 10px;
+      position: fixed;
+      left: 25%;    
+      bottom:2%;
+    }
+    
+  }
