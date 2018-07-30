@@ -169,8 +169,9 @@ body {
       font-size: 18px;
       padding: 5px 10px;
       position: static;
-      left: 35%;    
-      bottom:2%;
+      left: 35%;
+      top: 5%;    
+      bottom:0%;
     }
     
   }
