@@ -23,7 +23,7 @@ body {
     font-weight: 700;
   }
 
-  @media only screen and (max-width : 480px) {
+  @media only screen and (max-width : 768px) {
     .header h1 {
       color: #24272E;
       text-align: center;
