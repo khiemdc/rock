@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #292C34;
+}
+
+.header {
+    background-color: white;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    color: #24272E;
+    text-align: center;
+    font-family: Asap, sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+  }
