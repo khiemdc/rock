@@ -8,7 +8,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-4">
+  <div class="col-md-4 col-xs-9">
     
     <div class="content1">
         
@@ -22,22 +22,9 @@
      </div>
   </div>
   
-  <div class="col-md-4">
-    <div class="result">
-        <div *ngIf="!loading && isResultShow" class="flex-container flex-center" style="flex-direction: column">
-            <div [ngSwitch]="theResult">
-          <ng-template [ngSwitchCase]= "0"> <h1> You win! </h1></ng-template>
-          <ng-template [ngSwitchCase]= "1"> <h1> You lose. </h1> </ng-template>
-          <ng-template [ngSwitchCase]= "2"> <h1>It's a tie! </h1> </ng-template>
-          <ng-template ngSwitchDefault> </ng-template>
-        </div> 
-            <p> Pick again to continue...</p>
-            
-        </div>
-    </div>
-    
-  </div>
-  <div class="col-md-4">
+  <div class="col-md-4 col-xs-0"></div>
+
+  <div class="col-md-4 col-xs-3">
     <div class="computer-choice">
       <div class="content1">
         <h3>  Computer's weapon:</h3>
@@ -51,6 +38,23 @@
     </div>
   </div>
 </div>
+</div>
+
+<div class="row">
+  <div class="result">
+        <div *ngIf="!loading && isResultShow" class="flex-container flex-center" style="flex-direction: column">
+            <div [ngSwitch]="theResult">
+          <ng-template [ngSwitchCase]= "0"> <h1> You win! </h1></ng-template>
+          <ng-template [ngSwitchCase]= "1"> <h1> You lose. </h1> </ng-template>
+          <ng-template [ngSwitchCase]= "2"> <h1>It's a tie! </h1> </ng-template>
+          <ng-template ngSwitchDefault> </ng-template>
+        </div> 
+            <p> Pick again to continue...</p>
+            
+        </div>
+    </div>
+  
+
 </div>
 
 <div class="start-over">
