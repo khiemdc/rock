@@ -22,3 +22,14 @@ body {
     font-size: 4em;
     font-weight: 700;
   }
+
+  @media only screen and (min-width : 480px) {
+    .header h1 {
+      color: #24272E;
+      text-align: center;
+      font-family: Asap, sans-serif;
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+  }
