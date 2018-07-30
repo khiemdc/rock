@@ -16,7 +16,7 @@ export class PlayComponent implements OnInit {
   ];  
   playerSelected = -1;
   enemySelected  = -1;
-  loading= false; // we're going to show a loading spinner when waiting for the enemy pick.
+  loading= false; 
   isResultShow = false;
   // theResult -  0 winner
   //              1 lose
@@ -28,8 +28,7 @@ export class PlayComponent implements OnInit {
 
 
   pick( weapon: number): void {
-    // return immediately when still loading. You don't want
-    // the user to spam the button.
+    
     if(this.loading) return;
     this.loading = true;
     this.playerSelected = weapon;
@@ -56,16 +55,7 @@ export class PlayComponent implements OnInit {
      {
      this.theResult = 2;
    }
-   // let's say you picked rock ( 0 ) 
-   // and the enemy picked paper ( 1 )
-   // you lose because ( 0 - 1 + 3 ) % 3  is equal to 2.
-   // when you picked rock ( 0 )
-   // and the enemy picked scissor ( 2 )
-   // you win because ( 0 - 2 + 3) % 3 is equal to 1.
-   // when you picked scissor ( 2 )
-   // and the enemy picked paper ( 1 )
-   // you win because ( 2 - 1 + 3 ) % 3 is equal to 1. 4 % 3 is 1.
-   // Hope you get the picture.
+   
      else if ( (playerPick - enemyPick + 3)% 3 == 1)    {
        // YOU WIN
        this.theResult = 0;
@@ -77,8 +67,6 @@ export class PlayComponent implements OnInit {
          this.scores[1] = this.scores[1]+1;
      }
   }
-
- 
 
   ngOnInit() {
   }
